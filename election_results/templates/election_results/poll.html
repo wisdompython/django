@@ -35,8 +35,12 @@
     <div class="row-g-3" >
         {%csrf_token%}
         {{form.as_p}}
-        <button type="submit" class="btn btn-primary">Submit</button>
-    <p>total : {{poll_score}}</p>
+        <button type="submit" class="btn btn-primary">Submit</button><br />
+        
+    
+    </div>
+    <div>
+        <h1 ><strong>Total : </strong> {{poll_score}}</h1>
     </div>
     
     
