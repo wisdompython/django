@@ -68,6 +68,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  border-style: solid;
 }
 
 /* I added a new container ".card-wrapper" */
@@ -83,6 +84,7 @@ body {
   text-align: center;
   /* position the card to be relative. I'll explain position values later */
   position: relative;
+  border-style: solid;
 }
 
 .card-body {
