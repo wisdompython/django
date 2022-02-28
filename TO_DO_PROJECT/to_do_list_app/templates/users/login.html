@@ -1,0 +1,23 @@
+{% extends 'to_do_list_app/base.html'%}
+{%block content%}
+    <div class="header-bar"><h2>Login</h2></div>
+    <div class="card-body">
+        <form action="" form method="POST" >
+            <div class="col-md-6">
+                {%csrf_token%}
+                {{form.as_p}}
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Log in" class="button"></input>
+            </div>
+            <div>
+                Need an Account?  <a href="{% url 'signup'%}">Sign Up Now</a>
+            </div>
+    </div>
+{%endblock content%}
+    
+        
+    </form>
+    
+</body>
+</html>
