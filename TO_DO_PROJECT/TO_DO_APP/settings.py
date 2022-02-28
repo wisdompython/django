@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'to_do_list_app',
-    'rest_framework',
     'users',
 ]
 
@@ -79,8 +78,12 @@ WSGI_APPLICATION = 'TO_DO_APP.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'to_do_list',
+        'USER': 'postgres',
+        'PORT':'5432',
+        'HOST':'localhost',
+        'PASSWORD':'life1906',
     }
 }
 
